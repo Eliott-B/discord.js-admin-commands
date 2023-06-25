@@ -14,13 +14,13 @@ module.exports = {
     async execute(interaction) {
         var i = interaction.options.getInteger('limite');
         if (i > 100){
-            await interaction.reply(`${interaction.member}, you can delete a maximum of 100 messages !`);
+            await interaction.reply(`${interaction.member}, you can delete a maximum of 100 messages!`);
             return;
         }
         var logs = interaction.client.channels.cache.get(channels.logs);
         await interaction.channel.messages.fetch({limit: i}).then((messages) => {interaction.channel.bulkDelete(messages)});
-        await interaction.reply(`>>> *${i} messages have been successfully deleted !*`);
-        var clear = embed('Clear','#f56816',`${interaction.member} has deleted ${i} messages from the channel : ${interaction.channel}`,null,informations.name,informations.logo);
+        await interaction.reply(`>>> *${i} messages have been successfully deleted!*`);
+        var clear = embed('Clear','#f56816',`${interaction.member} has deleted ${i} messages from the channel: ${interaction.channel}`,null,informations.name,informations.logo);
         logs.send({embeds: [clear]});
         setTimeout(async function(){
             await interaction.deleteReply();
