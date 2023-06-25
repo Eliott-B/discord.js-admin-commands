@@ -1,0 +1,10 @@
+{
+    "informations": {
+        "name": "Bot",
+        "logo": "https://i.ibb.co/sQfTQkm/45932754.png"
+    },
+
+    "channels": {
+        "logs": "<ID>"
+    }
+}
