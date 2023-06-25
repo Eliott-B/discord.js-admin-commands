@@ -28,6 +28,10 @@ git clone https://github.com/Eliott-B/discord.js-admin-commands
 
 This command is used to clear *i* messages in a channel.
 
+### `purge`
+
+This command is used to purge all messages in a channel.
+
 ## CONTRIBUTORS
 
 - [Eliott-B](https://github.com/Eliott-B)
